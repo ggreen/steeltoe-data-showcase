@@ -26,7 +26,7 @@ namespace steeltoe.data.showcase.Repository
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseNpgsql(connectionString,
+            =>  options.UseNpgsql(connectionString,
             x => x.MigrationsHistoryTable("__EFMigrationsHistory", schemaName));
 
         protected override void OnModelCreating(ModelBuilder builder){
