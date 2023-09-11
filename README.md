@@ -11,12 +11,24 @@ Set connection string environment environment
 export ConnectionString="Host=127.0.0.1;Database=postgres;Username=postgres;Password=$POSTGRES_DB_PASSWORD"
 ```
 
+
 ## Testing with Swagger
 
 
 ```shell
 open http://localhost:5000/swagger/index.html
 ```
+
+## List Account
+
+
+```shell
+open http://localhost:5000/swagger/index.html
+```
+
+Example List Results
+
+![List Accounts](docs/img/image.png)
 
 # Set up Migration
 
