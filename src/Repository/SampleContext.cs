@@ -15,7 +15,7 @@ namespace steeltoe.data.showcase.Repository
     {
         private ISettings settings = new ConfigSettings();
         private string connectionString;
-        
+        private const string TESTING_EXE_NAME = "testhost.dll";
         private const string defaultSchemaName = "Sample";
 
         private readonly string schemaName;
@@ -30,9 +30,8 @@ namespace steeltoe.data.showcase.Repository
         protected override void OnConfiguring(DbContextOptionsBuilder options){
             
             var exeName = Path.GetFileName(Assembly.GetEntryAssembly().Location);
-            Console.WriteLine("Running with " + exeName);
 
-            if("testhost.dll".Equals(exeName))
+            if(TESTING_EXE_NAME.Equals(exeName))
                 return; //do not Postgres connections
 
             this.connectionString = settings.GetProperty("ConnectionString");

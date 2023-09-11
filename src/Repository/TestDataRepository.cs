@@ -49,8 +49,9 @@ namespace steeltoe.data.showcase.Repository
         public List<Account> FindAll()
         {
            return  dbContext.Account.Select(x => x)
+           .OrderBy( x => x.Id)
            .Take(findAllLimit)
-           .OrderBy( x => x.Id).ToList();
+           .ToList();
         }
     }
 }
