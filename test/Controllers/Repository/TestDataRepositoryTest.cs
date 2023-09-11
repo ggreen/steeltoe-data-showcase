@@ -19,7 +19,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
         private TestDataRepository subject;
         // private Moq.EntityFrameworkCore.<SampleContext> dbContext;
         private DbContextOptions options;
-        private TestData testData;
+        private Account testData;
 
         [TestInitialize]
         public void InitializeTestDataEfcRepositoryTest()
@@ -32,7 +32,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
 
             subject = new TestDataRepository(dbContext);
 
-            testData = new TestData();
+            testData = new Account();
         }
 
         [TestMethod]
@@ -47,7 +47,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
          [TestMethod]
         public void UpdateData()
         {
-            var testDataUpdate = new TestData();
+            var testDataUpdate = new Account();
             testData.Id = 2;
             testData.Data = "test update";
 
@@ -60,7 +60,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
         public void TestDelete()
         {
 
-            var testDataUpdate = new TestData();
+            var testDataUpdate = new Account();
             testData.Id = 3;
             testData.Data = "test update";
 
@@ -79,7 +79,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
         public void TestFindAll()
         {
 
-            var testDataUpdate = new TestData();
+            var testDataUpdate = new Account();
             testData.Id = 4;
             testData.Data = "test update";
 

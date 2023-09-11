@@ -17,7 +17,7 @@ namespace steeltoe.data.showcase.Repository
             this.dbContext = dbContext;
         }
 
-        public void Save(TestData testData)
+        public void Save(Account testData)
         {
             var updateData = FindById(testData.Id);
 
@@ -29,9 +29,9 @@ namespace steeltoe.data.showcase.Repository
             dbContext.SaveChanges();
         }
 
-        public TestData FindById(int id)
+        public Account FindById(int id)
         {
-            return dbContext.Find<TestData>(id);
+            return dbContext.Find<Account>(id);
         }
 
         public void DeleteById(int keyId)
@@ -45,9 +45,9 @@ namespace steeltoe.data.showcase.Repository
             dbContext.SaveChanges();
         }
 
-        public List<TestData> FindAll()
+        public List<Account> FindAll()
         {
-           return  dbContext.TestData.Select(x => x).ToList();
+           return  dbContext.Account.Select(x => x).ToList();
         }
     }
 }

@@ -1,17 +1,14 @@
 using steeltoe.data.showcase.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Diagnostics.Tracing.StackSources;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Steeltoe.Connector.PostgreSql;
 using Steeltoe.Connector.PostgreSql.EFCore;
-using Steeltoe.Connector.Redis;
 using Steeltoe.Extensions.Configuration.Placeholder;
 
-namespace lifescience_patient
+namespace steeltoe.data.showcase
 {
     public class Startup
     {
@@ -31,7 +28,7 @@ namespace lifescience_patient
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "lifescience_patient", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "steeltoe.data.showcase", Version = "v1" });
             });
         }
 
@@ -42,7 +39,7 @@ namespace lifescience_patient
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "lifescience_patient"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "steeltoe.data.showcase"));
             }
 
             app.UseHttpsRedirection();

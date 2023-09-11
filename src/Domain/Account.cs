@@ -4,10 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace steeltoe.data.showcase.Domain
 {
-    public class TestData
+    public class Account
     {
-        // [Key]
-        // [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
         public string Data { get; set; }

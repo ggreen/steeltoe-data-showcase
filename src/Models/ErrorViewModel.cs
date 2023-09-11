@@ -1,4 +1,4 @@
-namespace lifescience_patient.Model
+namespace steeltoe.data.showcase.Model
 {
     public class ErrorViewModel
     {

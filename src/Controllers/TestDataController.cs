@@ -20,21 +20,21 @@ namespace steeltoe.data.showcase.Controllers
         }
 
         [HttpPost]
-        public void PostData(TestData testData)
+        public void PostData(Account testData)
         {
             this.repository.Save(testData);
         }
 
         [HttpGet]
           [Route("{id}")] 
-        public TestData FindById(int id)
+        public Account FindById(int id)
         {
             
             return this.repository.FindById(id);
         }
 
        [HttpGet]
-        public List<TestData> FindAll()
+        public List<Account> FindAll()
         {
             return this.repository.FindAll();
         }

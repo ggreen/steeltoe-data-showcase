@@ -8,11 +8,11 @@ namespace steeltoe.data.showcase.Repository
 {
     public interface ITestDataRepository
     {
-        void Save(TestData value);
+        void Save(Account value);
 
-        List<TestData> FindAll();
+        List<Account> FindAll();
 
-        TestData FindById(int id);
+        Account FindById(int id);
         
 
          void DeleteById(int id);

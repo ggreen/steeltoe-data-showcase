@@ -17,14 +17,14 @@ namespace steeltoe.data.showcase.test.Controllers
 
         private Mock<ITestDataRepository> repository = new Mock<ITestDataRepository>();
         private TestDataController subject;
-        private TestData testData;
+        private Account testData;
 
         [TestInitialize]
         public void InitializeTestDataController()
         {
             repository = new Mock<ITestDataRepository>();
             subject = new TestDataController(repository.Object);
-            testData = new TestData();
+            testData = new Account();
             testData.Id = 1;
         }
         
@@ -33,7 +33,7 @@ namespace steeltoe.data.showcase.test.Controllers
         {
             subject.PostData(testData);
 
-            repository.Verify( repository => repository.Save(It.IsAny<TestData>()));
+            repository.Verify( repository => repository.Save(It.IsAny<Account>()));
         }
 
         [TestMethod]
@@ -48,7 +48,7 @@ namespace steeltoe.data.showcase.test.Controllers
         public void FindAll()
         {
             
-            List<TestData> expected = new List<TestData>();
+            List<Account> expected = new List<Account>();
             expected.Add(testData);
 
             repository.Setup( r => r.FindAll()).Returns(expected);

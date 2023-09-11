@@ -6,9 +6,8 @@ using Microsoft.Extensions.Hosting;
 using Steeltoe.Extensions.Configuration.Placeholder;
 using Imani.Solutions.Core.API.Util;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using steeltoe.data.showcase.src.Migrations;
 
-namespace lifescience_patient
+namespace steeltoe.data.showcase
 
 {
     public class Program
@@ -22,7 +21,7 @@ namespace lifescience_patient
             {
                 var db = scope.ServiceProvider.GetRequiredService<SampleContext>();
                 
-                new SampleContextSchemaMigration().Migrate(db.Database);
+                 SampleContext.Migrate(db.Database);
             }
 
             host.Run();

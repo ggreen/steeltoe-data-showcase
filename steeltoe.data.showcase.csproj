@@ -19,7 +19,7 @@
       <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>    
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'lifescience_patient' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'steeltoe.data.showcase' " />
   <ItemGroup>
     <PackageReference Include="Imani.Solutions.Core" Version="0.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">

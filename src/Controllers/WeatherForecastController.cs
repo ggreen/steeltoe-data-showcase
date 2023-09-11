@@ -42,7 +42,7 @@ namespace steeltoe.data.showcase.Controllers
 
 
         [HttpPost]
-        public  void PostData([FromBody] TestData testData)
+        public  void PostData([FromBody] Account testData)
         {
             dbContext.Add(testData);
             dbContext.SaveChanges();
