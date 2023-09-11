@@ -14,6 +14,7 @@ namespace steeltoe.data.showcase
     {
         public static void Main(string[] args)
         {
+
             var host = CreateHostBuilder(args).Build();
 ;            
             //Run migration

@@ -6,13 +6,15 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using System.IO;
+using System;
 
 namespace steeltoe.data.showcase.Repository
 {
     public class SampleContext : DbContext
     {
         private ISettings settings = new ConfigSettings();
-        private readonly string connectionString;
+        private string connectionString;
         
         private const string defaultSchemaName = "Sample";
 
@@ -25,9 +27,20 @@ namespace steeltoe.data.showcase.Repository
         }
 
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-            =>  options.UseNpgsql(connectionString,
+        protected override void OnConfiguring(DbContextOptionsBuilder options){
+            
+            var exeName = Path.GetFileName(Assembly.GetEntryAssembly().Location);
+            Console.WriteLine("Running with " + exeName);
+
+            if("testhost.dll".Equals(exeName))
+                return; //do not Postgres connections
+
+            this.connectionString = settings.GetProperty("ConnectionString");
+
+            options.UseNpgsql(connectionString,
             x => x.MigrationsHistoryTable("__EFMigrationsHistory", schemaName));
+        }
+            
 
         protected override void OnModelCreating(ModelBuilder builder){
 

@@ -12,7 +12,7 @@ using Moq;
 
 namespace steeltoe.data.showcase.test.Controllers.Repository
 {
-    // [TestClass]
+    [TestClass]
     public class TestDataRepositoryTest
     {
         private SampleContext dbContext;
@@ -21,7 +21,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
         private DbContextOptions options;
         private Account testData;
 
-        // [TestInitialize]
+        [TestInitialize]
         public void InitializeTestDataEfcRepositoryTest()
         {
              options =  new DbContextOptionsBuilder<SampleContext>()
@@ -35,7 +35,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
             testData = new Account();
         }
 
-        // [TestMethod]
+        [TestMethod]
         public void TestSaveData()
         {
             subject.Save(testData);
@@ -44,7 +44,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
             Assert.AreEqual(testData.Id, actual.Id);
         }
 
-        //  [TestMethod]
+         [TestMethod]
         public void UpdateData()
         {
             var testDataUpdate = new Account();
@@ -56,7 +56,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
             subject.Save(testData);
         }
 
-        // [TestMethod]
+        [TestMethod]
         public void TestDelete()
         {
 
@@ -75,7 +75,7 @@ namespace steeltoe.data.showcase.test.Controllers.Repository
             Assert.IsNull(subject.FindById(testData.Id));
         }
 
-        //  [TestMethod]
+         [TestMethod]
         public void TestFindAll()
         {
 
