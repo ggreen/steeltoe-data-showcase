@@ -1,13 +1,9 @@
 using Imani.Solutions.Core.API.Util;
 using steeltoe.data.showcase.Domain;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.IO;
-using System;
 
 namespace steeltoe.data.showcase.Repository
 {

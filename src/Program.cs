@@ -1,11 +1,8 @@
 using steeltoe.data.showcase.Repository;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Steeltoe.Extensions.Configuration.Placeholder;
-using Imani.Solutions.Core.API.Util;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace steeltoe.data.showcase
 

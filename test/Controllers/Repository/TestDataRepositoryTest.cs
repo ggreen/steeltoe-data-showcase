@@ -1,14 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
 using steeltoe.data.showcase.Domain;
 using steeltoe.data.showcase.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Moq;
 
 namespace steeltoe.data.showcase.test.Controllers.Repository
 {

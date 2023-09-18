@@ -1,6 +1,19 @@
 # steeltoe.data.showcase
 
-Example project to use Steel Toe Data Services.
+This is an example project that using VMware's [Steel Toe](https://steeltoe.io/).
+SteelToeDotNet is a developer API framework for [DotNet core](https://dotnet.microsoft.com/) application. It brings microservice design patterns and lessons learned from [Spring Boot](https://spring.io/projects/spring-boot) to the Dotnet world.
+
+
+Included in the showcases
+
+- SteelToe [Postgres Connector](https://docs.steeltoe.io/api/v3/connectors/postgresql.html)
+- [Repository pattern](https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff649690(v=pandp.10)?redirectedfrom=MSDN)
+- SteelToe [Application Configuration](https://docs.steeltoe.io/api/v3/configuration/placeholder-provider.html)
+- Domain-driven design
+- [Database migrations](https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/applying?tabs=dotnet-core-cli)
+- Web API Controller
+- Test Driven Development using [MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)
+- Mocking using [Moq](https://github.com/moq/moq)
 
 
 # Running Application

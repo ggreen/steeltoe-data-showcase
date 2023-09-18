@@ -1,10 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using steeltoe.data.showcase.Domain;
-using steeltoe.data.showcase.Repository;
-using Microsoft.EntityFrameworkCore;
 using Imani.Solutions.Core.API.Util;
 
 namespace steeltoe.data.showcase.Repository
