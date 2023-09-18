@@ -21,6 +21,7 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'steeltoe.data.showcase' " />
   <ItemGroup>
+    <ProjectReference Include="../../components/account.domain/account.domain.csproj" />
     <PackageReference Include="Imani.Solutions.Core" Version="0.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

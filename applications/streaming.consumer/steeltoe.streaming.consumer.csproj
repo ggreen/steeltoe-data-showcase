@@ -15,11 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../../components/account.domain/account.domain.csproj" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.*" />
     <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
     <PackageReference Include="Steeltoe.Common.Hosting" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Steeltoe.Connector.EFCore" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Steeltoe.Management.EndpointCore" Version="$(SteeltoeVersion)" />
+    <PackageReference Include="Steeltoe.Connector.ConnectorCore" Version="$(SteeltoeVersion)" />
   </ItemGroup>
 
 </Project>

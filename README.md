@@ -14,6 +14,7 @@ Included in the showcase
 - Web API Controller
 - Test Driven Development using [MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)
 - Mocking using [Moq](https://github.com/moq/moq)
+- Mono Repo
 
 
 ## MonoRep
@@ -23,6 +24,21 @@ dotnet new sln
  dotnet sln add applications/service.api/steeltoe.data.showcase.csproj
  dotnet sln add applications/streaming.consumer/steeltoe.streaming.consumer.csproj
 ```
+
+Make components
+
+```shell
+mkdir -p  components/account.domain
+cd components/account.domain
+dotnet new classlib -f net6.0
+cd ../..
+```
+
+
+```shell
+ dotnet sln add  components/account.domain/account.domain.csproj
+```
+
 # Running Application
 
 Set connection string environment environment
