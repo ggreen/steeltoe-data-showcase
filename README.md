@@ -1,10 +1,10 @@
 # steeltoe.data.showcase
 
-This is an example project that using VMware's [Steel Toe](https://steeltoe.io/).
-SteelToeDotNet is a developer API framework for [DotNet core](https://dotnet.microsoft.com/) application. It brings microservice design patterns and lessons learned from [Spring Boot](https://spring.io/projects/spring-boot) to the Dotnet world.
+The project is based on the [Steel Toe](https://steeltoe.io/) framework.
+SteelToe is a developer API framework for [DotNet core](https://dotnet.microsoft.com/) applications. It brings microservice design patterns and lessons learned from [Spring Boot](https://spring.io/projects/spring-boot) to the Dotnet world.
 
 
-Included in the showcases
+Included in the showcase
 
 - SteelToe [Postgres Connector](https://docs.steeltoe.io/api/v3/connectors/postgresql.html)
 - [Repository pattern](https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff649690(v=pandp.10)?redirectedfrom=MSDN)
