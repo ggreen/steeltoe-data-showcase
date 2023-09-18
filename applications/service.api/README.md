@@ -16,13 +16,6 @@ Included in the showcase
 - Mocking using [Moq](https://github.com/moq/moq)
 
 
-## MonoRep
-
-```shell
-dotnet new sln
- dotnet sln add applications/service.api/steeltoe.data.showcase.csproj
- dotnet sln add applications/streaming.consumer/steeltoe.streaming.consumer.csproj
-```
 # Running Application
 
 Set connection string environment environment
