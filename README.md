@@ -24,6 +24,10 @@ Set connection string environment environment
 export ConnectionString="Host=127.0.0.1;Database=postgres;Username=postgres;Password=$POSTGRES_DB_PASSWORD"
 ```
 
+```shell
+dotnet run
+```
+
 
 ## Testing with Swagger
 
