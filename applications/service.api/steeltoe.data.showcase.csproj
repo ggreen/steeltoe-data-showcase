@@ -13,8 +13,9 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <GenerateProgramFile>false</GenerateProgramFile>
-    <RootNamespace>steeltoe.data.showcase</RootNamespace>
+      <GenerateProgramFile>false</GenerateProgramFile>
+      <RootNamespace>steeltoe.data.showcase</RootNamespace>
+      <StartupObject>steeltoe.data.showcase.Program</StartupObject>
       <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
       <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>    
   </PropertyGroup>

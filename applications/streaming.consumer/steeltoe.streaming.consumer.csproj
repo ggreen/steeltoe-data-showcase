@@ -8,6 +8,7 @@
 
   <PropertyGroup>
     <SteeltoeVersion>3.2.0</SteeltoeVersion>
+    <StartupObject>steeltoe.streaming.consumer.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
