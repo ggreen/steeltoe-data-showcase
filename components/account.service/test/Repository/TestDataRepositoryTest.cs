@@ -3,7 +3,7 @@ using steeltoe.data.showcase.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace steeltoe.data.showcase.test.Controllers.Repository
+namespace steeltoe.data.showcase.test.Repository
 {
     [TestClass]
     public class TestDataRepositoryTest

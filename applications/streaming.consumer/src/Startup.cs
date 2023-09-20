@@ -32,7 +32,7 @@ namespace steeltoe.streaming.consumer
             services.AddAllActuators(Configuration);
             services.ActivateActuatorEndpoints();
             services.AddControllers();
-            
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "steeltoe.streaming.consumer", Version = "v1" });

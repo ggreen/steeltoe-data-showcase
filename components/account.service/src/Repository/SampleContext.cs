@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.IO;
+using System;
 
 namespace steeltoe.data.showcase.Repository
 {
@@ -28,7 +29,14 @@ namespace steeltoe.data.showcase.Repository
             var exeName = Path.GetFileName(Assembly.GetEntryAssembly().Location);
 
             if(TESTING_EXE_NAME.Equals(exeName))
+            {
+                //let Account.Data be null
+                   options
+                    .UseInMemoryDatabase("UserContextWithNullCheckingDisabled", 
+                    b => b.EnableNullChecks(false));
+
                 return; //do not Postgres connections
+            }
 
             this.connectionString = settings.GetProperty("ConnectionString");
 

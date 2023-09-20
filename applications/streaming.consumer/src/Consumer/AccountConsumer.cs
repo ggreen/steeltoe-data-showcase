@@ -15,12 +15,21 @@ namespace streaming.consumer.Consumer
     public class AccountConsumer
     {
 
-        private readonly IServiceProvider serviceProvider;
          private readonly ILogger log;
 
+        public delegate ITestDataRepository CreateRepository();
+
+        private CreateRepository repositoryCreator;
+
         public AccountConsumer(IServiceProvider serviceProvider)
+        : this(delegate {
+            return serviceProvider.GetRequiredService<ITestDataRepository>();
+        })
+        {}
+
+        public AccountConsumer(CreateRepository repositoryCreator)
         {
-            this.serviceProvider = serviceProvider;
+            this.repositoryCreator = repositoryCreator;
             // this.log = log;
         }
 
@@ -29,7 +38,7 @@ namespace streaming.consumer.Consumer
         {
             Console.WriteLine($"ACCOUNT: ${account}");
 
-            var repository = serviceProvider.GetRequiredService<ITestDataRepository>();
+            var repository = repositoryCreator();
 
             repository.Save(account);
         }
