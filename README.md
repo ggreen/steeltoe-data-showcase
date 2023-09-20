@@ -42,7 +42,10 @@ cd ../..
  dotnet sln add  components/account.service/account.service.csproj
 ```
 
-# Running Application
+# Running Applications
+
+
+## Servie API Application
 
 Set connection string environment environment
 
@@ -51,6 +54,7 @@ export ConnectionString="Host=127.0.0.1;Database=postgres;Username=postgres;Pass
 ```
 
 ```shell
+cd applications/service.api
 dotnet run
 ```
 

@@ -7,7 +7,10 @@ using Microsoft.OpenApi.Models;
 using Steeltoe.Connector.PostgreSql.EFCore;
 using Steeltoe.Connector.RabbitMQ;
 using Steeltoe.Management.Endpoint;
-using steeltoe.streaming.consumer.Models;
+using Steeltoe.Stream.Extensions;
+using streaming.consumer.Consumer;
+using System;
+using steeltoe.data.showcase.Repository;
 
 namespace steeltoe.streaming.consumer
 {
@@ -25,9 +28,11 @@ namespace steeltoe.streaming.consumer
         {
             services.AddDbContext<SampleContext>(options => options.UseNpgsql(Configuration));
             services.AddRabbitMQConnection(Configuration);
+            services.AddScoped<ITestDataRepository,TestDataRepository>();
             services.AddAllActuators(Configuration);
             services.ActivateActuatorEndpoints();
             services.AddControllers();
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "steeltoe.streaming.consumer", Version = "v1" });
