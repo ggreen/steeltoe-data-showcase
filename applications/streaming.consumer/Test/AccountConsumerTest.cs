@@ -1,14 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using steeltoe.data.showcase.Domain;
 using steeltoe.data.showcase.Repository;
-using Steeltoe.Integration.Rabbit.Support;
 using streaming.consumer.Consumer;
 
 namespace streaming.consumer.test

@@ -17,33 +17,8 @@ Included in the showcase
 - Mono Repo
 
 
-## MonoRep
-
-```shell
-dotnet new sln
- 
- dotnet sln add applications/service.api/steeltoe.data.showcase.csproj
- dotnet sln add applications/streaming.consumer/steeltoe.streaming.consumer.csproj
- account.service.csproj
-```
-
-Make components
-
-```shell
-mkdir -p  components/account.domain
-cd components/account.domain
-dotnet new classlib -f net6.0
-cd ../..
-```
-
-
-```shell
- dotnet sln add  components/account.domain/account.domain.csproj
- dotnet sln add  components/account.service/account.service.csproj
-```
 
 # Running Applications
-
 
 ## Servie API Application
 
@@ -100,9 +75,35 @@ View migration SQL script
 dotnet ef migrations script
 ```
 
-# Testing
+# Unit Testing
 
 
 ```shell
 dotnet  test
+```
+
+
+## MonoRep 
+
+```shell
+dotnet new sln
+ 
+ dotnet sln add applications/service.api/steeltoe.data.showcase.csproj
+ dotnet sln add applications/streaming.consumer/steeltoe.streaming.consumer.csproj
+ account.service.csproj
+```
+
+Make components
+
+```shell
+mkdir -p  components/account.domain
+cd components/account.domain
+dotnet new classlib -f net6.0
+cd ../..
+```
+
+
+```shell
+ dotnet sln add  components/account.domain/account.domain.csproj
+ dotnet sln add  components/account.service/account.service.csproj
 ```
