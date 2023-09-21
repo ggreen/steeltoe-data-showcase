@@ -10,7 +10,7 @@ using steeltoe.data.showcase.Repository;
 
 namespace steeltoe.data.showcase.Migrations
 {
-    [DbContext(typeof(SampleContext))]
+    [DbContext(typeof(AccountDbContext))]
     [Migration("20230911010533_InitialCreate")]
     partial class InitialCreate
     {

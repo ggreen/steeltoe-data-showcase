@@ -8,18 +8,18 @@ using Moq;
 namespace steeltoe.data.showcase.test.Controllers
 {
     [TestClass]
-    public class TestDataControllerTest
+    public class AccountControllerTest
     {
 
-        private Mock<ITestDataRepository> repository = new Mock<ITestDataRepository>();
-        private TestDataController subject;
+        private Mock<IAccountRepository> repository = new Mock<IAccountRepository>();
+        private AccountController subject;
         private Account testData;
 
         [TestInitialize]
         public void InitializeTestDataController()
         {
-            repository = new Mock<ITestDataRepository>();
-            subject = new TestDataController(repository.Object);
+            repository = new Mock<IAccountRepository>();
+            subject = new AccountController(repository.Object);
             testData = new Account();
             testData.Id = 1;
         }

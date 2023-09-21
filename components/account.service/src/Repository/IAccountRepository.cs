@@ -3,7 +3,7 @@ using steeltoe.data.showcase.Domain;
 
 namespace steeltoe.data.showcase.Repository
 {
-    public interface ITestDataRepository
+    public interface IAccountRepository
     {
         void Save(Account value);
 

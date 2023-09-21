@@ -7,11 +7,11 @@ namespace steeltoe.data.showcase.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class TestDataController
+    public class AccountController
     {
-        private ITestDataRepository repository;
+        private IAccountRepository repository;
 
-        public TestDataController(ITestDataRepository repository)
+        public AccountController(IAccountRepository repository)
         {
             this.repository = repository;
         }

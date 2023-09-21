@@ -6,10 +6,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace steeltoe.data.showcase.test.Repository
 {
     [TestClass]
-    public class TestDataRepositoryTest
+    public class AccountRepositoryTest
     {
-        private SampleContext dbContext;
-        private TestDataRepository subject;
+        private AccountDbContext dbContext;
+        private AccountDataRepository subject;
         // private Moq.EntityFrameworkCore.<SampleContext> dbContext;
         private DbContextOptions options;
         private Account testData;
@@ -17,13 +17,13 @@ namespace steeltoe.data.showcase.test.Repository
         [TestInitialize]
         public void InitializeTestDataEfcRepositoryTest()
         {
-             options =  new DbContextOptionsBuilder<SampleContext>()
+             options =  new DbContextOptionsBuilder<AccountDbContext>()
             .UseInMemoryDatabase(databaseName: "SampleDatabase")
             .Options;
 
-            dbContext = new SampleContext(options);
+            dbContext = new AccountDbContext(options);
 
-            subject = new TestDataRepository(dbContext);
+            subject = new AccountDataRepository(dbContext);
 
             testData = new Account();
         }

@@ -17,13 +17,13 @@ namespace streaming.consumer.Consumer
 
          private readonly ILogger<AccountConsumer> log;
 
-        public delegate ITestDataRepository CreateRepository();
+        public delegate IAccountRepository CreateRepository();
 
         private CreateRepository repositoryCreator;
 
         public AccountConsumer(IServiceProvider serviceProvider,ILogger<AccountConsumer> logger)
         : this((delegate {
-            return serviceProvider.GetRequiredService<ITestDataRepository>();
+            return serviceProvider.GetRequiredService<IAccountRepository>();
         }),logger)
         {}
 

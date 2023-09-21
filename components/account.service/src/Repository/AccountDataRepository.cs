@@ -5,12 +5,12 @@ using Imani.Solutions.Core.API.Util;
 
 namespace steeltoe.data.showcase.Repository
 {
-    public class TestDataRepository : ITestDataRepository
+    public class AccountDataRepository : IAccountRepository
     {
-        private SampleContext dbContext;
+        private AccountDbContext dbContext;
         private readonly int findAllLimit = new ConfigSettings().GetPropertyInteger("findAllLimit",1000);
 
-        public TestDataRepository(SampleContext dbContext)
+        public AccountDataRepository(AccountDbContext dbContext)
         {
             this.dbContext = dbContext;
         }

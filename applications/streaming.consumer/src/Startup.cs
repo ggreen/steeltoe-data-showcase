@@ -26,9 +26,9 @@ namespace steeltoe.streaming.consumer
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<SampleContext>(options => options.UseNpgsql(Configuration));
+            services.AddDbContext<AccountDbContext>(options => options.UseNpgsql(Configuration));
             services.AddRabbitMQConnection(Configuration);
-            services.AddScoped<ITestDataRepository,TestDataRepository>();
+            services.AddScoped<IAccountRepository,AccountDataRepository>();
             services.AddAllActuators(Configuration);
             services.ActivateActuatorEndpoints();
             services.AddControllers();

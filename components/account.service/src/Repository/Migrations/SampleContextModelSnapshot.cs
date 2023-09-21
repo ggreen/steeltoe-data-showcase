@@ -9,7 +9,7 @@ using steeltoe.data.showcase.Repository;
 
 namespace steeltoe.data.showcase.Migrations
 {
-    [DbContext(typeof(SampleContext))]
+    [DbContext(typeof(AccountDbContext))]
     partial class SampleContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

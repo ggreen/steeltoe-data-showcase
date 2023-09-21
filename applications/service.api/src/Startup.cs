@@ -23,8 +23,8 @@ namespace steeltoe.data.showcase
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<SampleContext>(options => options.UseNpgsql(Configuration));
-            services.AddScoped<ITestDataRepository,TestDataRepository>();
+            services.AddDbContext<AccountDbContext>(options => options.UseNpgsql(Configuration));
+            services.AddScoped<IAccountRepository,AccountDataRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

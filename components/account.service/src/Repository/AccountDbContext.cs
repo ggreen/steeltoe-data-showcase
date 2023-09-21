@@ -8,7 +8,7 @@ using System;
 
 namespace steeltoe.data.showcase.Repository
 {
-    public class SampleContext : DbContext
+    public class AccountDbContext : DbContext
     {
         private ISettings settings = new ConfigSettings();
         private string connectionString;
@@ -17,7 +17,7 @@ namespace steeltoe.data.showcase.Repository
 
         private readonly string schemaName;
 
-        public SampleContext(DbContextOptions options) : base(options)
+        public AccountDbContext(DbContextOptions options) : base(options)
         {
             this.schemaName = settings.GetProperty("SCHEMA_NAME",defaultSchemaName);
             this.connectionString = settings.GetProperty("ConnectionString","");

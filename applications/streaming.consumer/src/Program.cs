@@ -19,9 +19,9 @@ namespace steeltoe.streaming.consumer
                   //Run migration
             using (var scope = host.Services.CreateScope())
             {
-                var db = scope.ServiceProvider.GetRequiredService<SampleContext>();
+                var db = scope.ServiceProvider.GetRequiredService<AccountDbContext>();
                 
-                 SampleContext.Migrate(db.Database);
+                 AccountDbContext.Migrate(db.Database);
             }
 
             host.Run();

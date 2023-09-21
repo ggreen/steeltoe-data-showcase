@@ -13,7 +13,7 @@ namespace streaming.consumer.test
         private Account account;
         
         
-        private Mock<ITestDataRepository> repository;
+        private Mock<IAccountRepository> repository;
         private Mock<ILogger<AccountConsumer>>  log;
 
         private AccountConsumer subject;
@@ -22,7 +22,7 @@ namespace streaming.consumer.test
         public void InitializeAccountConsumerTest()
         {
             log = new Mock<ILogger<AccountConsumer>>();
-            repository = new Mock<ITestDataRepository>();
+            repository = new Mock<IAccountRepository>();
 
             account = new Account();
             subject = new AccountConsumer(
