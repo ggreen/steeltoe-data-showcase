@@ -9,8 +9,12 @@ Included in the showcase
 - SteelToe [Postgres Connector](https://docs.steeltoe.io/api/v3/connectors/postgresql.html)
 - [Repository pattern](https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff649690(v=pandp.10)?redirectedfrom=MSDN)
 - SteelToe [Application Configuration](https://docs.steeltoe.io/api/v3/configuration/placeholder-provider.html)
-- Domain-driven design
+- SteelToe [Dynamic Logging](https://docs.steeltoe.io/api/v3/logging/index.html)
+- [SteelToe Stream](https://docs.steeltoe.io/api/v3/stream/)
+- RabbitMQ [https://rabbitmq.com/]
+- Postgres [https://www.postgresql.org/]
 - [Database migrations](https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/applying?tabs=dotnet-core-cli)
+- Domain-driven design
 - Web API Controller
 - Test Driven Development using [MSTest](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)
 - Mocking using [Moq](https://github.com/moq/moq)
