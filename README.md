@@ -24,22 +24,32 @@ Included in the showcase
 
 # Running Applications
 
-## Servie API Application
 
 Set connection string environment environment
 
 ```shell
 export ConnectionString="Host=127.0.0.1;Database=postgres;Username=postgres;Password=$POSTGRES_DB_PASSWORD"
 ```
+
+## Consumer Streaming Application
+
 ```shell
 export rabbit_vhost=streaming
 ```
 
+```shell
+cd applications/streaming.consumer
+dotnet run
+```
+
+
+## Web Service API Application
 
 ```shell
 cd applications/service.api
 dotnet run
 ```
+
 
 
 ## Testing with Swagger
