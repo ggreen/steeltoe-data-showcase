@@ -27,6 +27,10 @@ Set connection string environment environment
 ```shell
 export ConnectionString="Host=127.0.0.1;Database=postgres;Username=postgres;Password=$POSTGRES_DB_PASSWORD"
 ```
+```shell
+export rabbit_vhost=streaming
+```
+
 
 ```shell
 cd applications/service.api

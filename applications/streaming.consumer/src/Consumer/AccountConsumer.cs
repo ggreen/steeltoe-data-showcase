@@ -15,28 +15,28 @@ namespace streaming.consumer.Consumer
     public class AccountConsumer
     {
 
-         private readonly ILogger log;
+         private readonly ILogger<AccountConsumer> log;
 
         public delegate ITestDataRepository CreateRepository();
 
         private CreateRepository repositoryCreator;
 
-        public AccountConsumer(IServiceProvider serviceProvider)
-        : this(delegate {
+        public AccountConsumer(IServiceProvider serviceProvider,ILogger<AccountConsumer> logger)
+        : this((delegate {
             return serviceProvider.GetRequiredService<ITestDataRepository>();
-        })
+        }),logger)
         {}
 
-        public AccountConsumer(CreateRepository repositoryCreator)
+        public AccountConsumer(CreateRepository repositoryCreator,ILogger<AccountConsumer> log)
         {
             this.repositoryCreator = repositoryCreator;
-            // this.log = log;
+            this.log = log;
         }
 
         [StreamListener(ISink.INPUT)]
         public void Accept(Account account)
         {
-            Console.WriteLine($"ACCOUNT: ${account}");
+            log.LogInformation($"ACCOUNT: ${account}");
 
             var repository = repositoryCreator();
 
