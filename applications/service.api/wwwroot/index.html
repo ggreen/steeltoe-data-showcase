@@ -29,7 +29,7 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $.get("TestData", function(accounts, status){
+    $.get("Account", function(accounts, status){
 
         var tableHTML = "<table class='dataTable'><tr><th>Id</th><th>data</th></tr>";
         for (let x in accounts) {
