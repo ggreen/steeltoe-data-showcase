@@ -11,8 +11,8 @@ Included in the showcase
 - SteelToe [Application Configuration](https://docs.steeltoe.io/api/v3/configuration/placeholder-provider.html)
 - SteelToe [Dynamic Logging](https://docs.steeltoe.io/api/v3/logging/index.html)
 - [SteelToe Stream](https://docs.steeltoe.io/api/v3/stream/)
-- RabbitMQ [https://rabbitmq.com/]
-- Postgres [https://www.postgresql.org/]
+- [RabbitMQ](https://rabbitmq.com/)
+- [Postgres](https://www.postgresql.org/)
 - [Database migrations](https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/applying?tabs=dotnet-core-cli)
 - Domain-driven design
 - Web API Controller
