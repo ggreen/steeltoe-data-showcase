@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Description>steeltoe.streaming.consumer project</Description>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+     <!-- <ContainerImageName>dotnet-worker-image</ContainerImageName> -->
   </PropertyGroup>
 
   <PropertyGroup>
@@ -12,6 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Build.Containers" Version="7.0.401" />
     <PackageReference Include="Steeltoe.Stream.Binder.RabbitMQ" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Steeltoe.Stream.StreamBase" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.*" />
@@ -21,12 +23,10 @@
     <ProjectReference Include="../../components/account.domain/account.domain.csproj" />
     <ProjectReference Include="../../components/account.service/account.service.csproj" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
-    <!-- <PackageReference Include="RabbitMQ.Client" Version="6.5.0" /> -->
     <PackageReference Include="Steeltoe.Common.Hosting" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Steeltoe.Connector.EFCore" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Steeltoe.Extensions.Logging.DynamicLogger" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Steeltoe.Connector.ConnectorCore" Version="$(SteeltoeVersion)" />
-    <!-- <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.10" /> -->
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.1" />
     <PackageReference Include="Moq" Version="4.20.69" />
     <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
