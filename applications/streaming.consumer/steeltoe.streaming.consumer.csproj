@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Description>steeltoe.streaming.consumer project</Description>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-     <!-- <ContainerImageName>dotnet-worker-image</ContainerImageName> -->
+     <ContainerImageName>account.consumer</ContainerImageName>
   </PropertyGroup>
 
   <PropertyGroup>
