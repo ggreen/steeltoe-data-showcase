@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace steeltoe.data.showcase.Migrations
+namespace steeltoe.data.Showcase.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

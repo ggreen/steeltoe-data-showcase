@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using steeltoe.data.showcase.Domain;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Domain;
+using steeltoe.data.Showcase.Repository;
 using Steeltoe.Stream.Attributes;
 using Steeltoe.Stream.Messaging;
 

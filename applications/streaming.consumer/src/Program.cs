@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Repository;
 using Steeltoe.Common.Hosting;
 using Steeltoe.Extensions.Configuration.Placeholder;
 using Steeltoe.Extensions.Logging;

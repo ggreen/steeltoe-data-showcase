@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using steeltoe.data.showcase.Domain;
+using steeltoe.data.Showcase.Domain;
 using Imani.Solutions.Core.API.Util;
 
-namespace steeltoe.data.showcase.Repository
+namespace steeltoe.data.Showcase.Repository
 {
     public class AccountDataRepository : IAccountRepository
     {

@@ -1,9 +1,9 @@
-using steeltoe.data.showcase.Domain;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Domain;
+using steeltoe.data.Showcase.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace steeltoe.data.showcase.test.Repository
+namespace steeltoe.data.Showcase.test.Repository
 {
     [TestClass]
     public class AccountRepositoryTest

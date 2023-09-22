@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Repository;
 
 #nullable disable
 
-namespace steeltoe.data.showcase.Migrations
+namespace steeltoe.data.Showcase.Migrations
 {
     [DbContext(typeof(AccountDbContext))]
     [Migration("20230911010533_InitialCreate")]

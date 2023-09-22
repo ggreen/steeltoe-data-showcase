@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using steeltoe.data.showcase.Domain;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Domain;
+using steeltoe.data.Showcase.Repository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace steeltoe.data.showcase.Controllers
+namespace Showcase.SteelToe.Data.Solutions.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -1,10 +1,10 @@
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Repository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Steeltoe.Extensions.Configuration.Placeholder;
 
-namespace steeltoe.data.showcase
+namespace Showcase.SteelToe.Data.Solutions
 
 {
     public class Program

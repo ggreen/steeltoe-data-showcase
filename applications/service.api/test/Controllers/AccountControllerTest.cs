@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using steeltoe.data.showcase.Controllers;
-using steeltoe.data.showcase.Domain;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Domain;
+using steeltoe.data.Showcase.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using Showcase.SteelToe.Data.Solutions.Controllers;
 
-namespace steeltoe.data.showcase.test.Controllers
+namespace Showcase.SteelToe.Data.Solutions.Test.Controllers
 {
     [TestClass]
     public class AccountControllerTest

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using steeltoe.data.showcase.Domain;
+using steeltoe.data.Showcase.Domain;
 
-namespace steeltoe.data.showcase.Repository
+namespace steeltoe.data.Showcase.Repository
 {
     public interface IAccountRepository
     {

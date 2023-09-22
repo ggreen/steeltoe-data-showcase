@@ -1,8 +1,8 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using steeltoe.data.showcase.Domain;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Domain;
+using steeltoe.data.Showcase.Repository;
 using streaming.consumer.Consumer;
 
 namespace streaming.consumer.test

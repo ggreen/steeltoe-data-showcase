@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Description>steeltoe.streaming.consumer project</Description>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-     <ContainerImageName>account.consumer</ContainerImageName>
+     <ContainerRepository>account.consumer</ContainerRepository>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -13,7 +13,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Build.Containers" Version="7.0.401" />
     <PackageReference Include="Steeltoe.Stream.Binder.RabbitMQ" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Steeltoe.Stream.StreamBase" Version="$(SteeltoeVersion)" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.*" />

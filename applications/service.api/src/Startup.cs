@@ -1,4 +1,4 @@
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +8,7 @@ using Microsoft.OpenApi.Models;
 using Steeltoe.Connector.PostgreSql.EFCore;
 using Steeltoe.Extensions.Configuration.Placeholder;
 
-namespace steeltoe.data.showcase
+namespace Showcase.SteelToe.Data.Solutions
 {
     public class Startup
     {

@@ -10,7 +10,7 @@ using Steeltoe.Management.Endpoint;
 using Steeltoe.Stream.Extensions;
 using streaming.consumer.Consumer;
 using System;
-using steeltoe.data.showcase.Repository;
+using steeltoe.data.Showcase.Repository;
 
 namespace steeltoe.streaming.consumer
 {
