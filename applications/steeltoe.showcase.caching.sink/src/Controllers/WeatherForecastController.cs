@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using StackExchange.Redis;
 
-namespace steeltoe.showcase.caching.sink.Controllers
+namespace Steeltoe.Showcase.Caching.Sink.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -35,5 +36,7 @@ namespace steeltoe.showcase.caching.sink.Controllers
             })
             .ToArray();
         }
+
+
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace steeltoe.showcase.caching.sink
+namespace Steeltoe.Showcase.Caching.Sink
 {
     public class WeatherForecast
     {

@@ -6,8 +6,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Steeltoe.Connector.RabbitMQ;
 using Steeltoe.Connector.Redis;
+using Steeltoe.Showcase.Caching.Sink.Repository;
 
-namespace steeltoe.showcase.caching.sink
+namespace Steeltoe.Showcase.Caching.Sink
 {
     public class Startup
     {
@@ -22,7 +23,8 @@ namespace steeltoe.showcase.caching.sink
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRabbitMQConnection(Configuration);
-            services.AddDistributedRedisCache(Configuration);
+            services.AddRedisConnectionMultiplexer(Configuration);
+            services.AddScoped<IAccountRepository,AccountRedisRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
