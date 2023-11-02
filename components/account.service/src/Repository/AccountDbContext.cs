@@ -1,12 +1,12 @@
 using Imani.Solutions.Core.API.Util;
-using steeltoe.data.Showcase.Domain;
+using Showcase.SteelToe.Data.Solutions.Domain;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.IO;
 using System;
 
-namespace steeltoe.data.Showcase.Repository
+namespace Showcase.SteelToe.Data.Repository
 {
     public class AccountDbContext : DbContext
     {

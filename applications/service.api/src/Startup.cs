@@ -1,4 +1,4 @@
-using steeltoe.data.Showcase.Repository;
+using Showcase.SteelToe.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

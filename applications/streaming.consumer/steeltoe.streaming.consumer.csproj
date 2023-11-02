@@ -9,7 +9,8 @@
 
   <PropertyGroup>
     <SteeltoeVersion>3.2.0</SteeltoeVersion>
-    <StartupObject>steeltoe.streaming.consumer.Program</StartupObject>
+    <StartupObject>Showcase.SteelToe.Data.Solutions.Consumer.Program</StartupObject>
+    <RootNamespace>Showcase.SteelToe.Data.Solutions</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

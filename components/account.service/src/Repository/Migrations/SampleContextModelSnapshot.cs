@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using steeltoe.data.Showcase.Repository;
+using Showcase.SteelToe.Data.Repository;
 
 #nullable disable
 
-namespace steeltoe.data.Showcase.Migrations
+namespace Showcase.SteelToe.Data.Migrations
 {
     [DbContext(typeof(AccountDbContext))]
     partial class SampleContextModelSnapshot : ModelSnapshot

@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using steeltoe.data.Showcase.Repository;
+using Showcase.SteelToe.Data.Repository;
+using Showcase.SteelToe.Data.Solutions.Consumer.Consumers;
 using Steeltoe.Common.Hosting;
 using Steeltoe.Extensions.Configuration.Placeholder;
 using Steeltoe.Extensions.Logging;
 using Steeltoe.Stream.Extensions;
-using streaming.consumer.Consumer;
 
-namespace steeltoe.streaming.consumer
+namespace Showcase.SteelToe.Data.Solutions.Consumer
 {
     public class Program
     {

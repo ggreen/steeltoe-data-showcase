@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using steeltoe.data.Showcase.Domain;
-using steeltoe.data.Showcase.Repository;
+using Showcase.SteelToe.Data.Solutions.Domain;
+using Showcase.SteelToe.Data.Repository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Showcase.SteelToe.Data.Solutions.Controllers;

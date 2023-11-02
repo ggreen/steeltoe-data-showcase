@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "account.domain", "component
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "account.service", "components\account.service\account.service.csproj", "{6A72734F-2EF9-46C9-8337-8A4304DE61A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "steeltoe.showcase.caching.sink", "applications\steeltoe.showcase.caching.sink\steeltoe.showcase.caching.sink.csproj", "{2F3EEA34-926E-4D6C-ACB3-1ED150F6F61B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,11 +42,16 @@ Global
 		{6A72734F-2EF9-46C9-8337-8A4304DE61A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A72734F-2EF9-46C9-8337-8A4304DE61A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A72734F-2EF9-46C9-8337-8A4304DE61A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F3EEA34-926E-4D6C-ACB3-1ED150F6F61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3EEA34-926E-4D6C-ACB3-1ED150F6F61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3EEA34-926E-4D6C-ACB3-1ED150F6F61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3EEA34-926E-4D6C-ACB3-1ED150F6F61B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D2EF210A-EC3F-4A69-B65F-7344F14FE7BE} = {BD5E5EA3-9513-4728-B671-F6B2A885BEEF}
 		{05C11D6F-C321-41D2-B124-47FBFB9A6807} = {BD5E5EA3-9513-4728-B671-F6B2A885BEEF}
 		{F5A26C45-4C16-4618-BD40-92B9EA7D43F6} = {B53F4094-4DCC-4984-AB11-0EBD35D42784}
 		{6A72734F-2EF9-46C9-8337-8A4304DE61A4} = {B53F4094-4DCC-4984-AB11-0EBD35D42784}
+		{2F3EEA34-926E-4D6C-ACB3-1ED150F6F61B} = {BD5E5EA3-9513-4728-B671-F6B2A885BEEF}
 	EndGlobalSection
 EndGlobal

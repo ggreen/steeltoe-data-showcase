@@ -1,4 +1,4 @@
-﻿namespace steeltoe.data.Showcase.Domain
+﻿namespace Showcase.SteelToe.Data.Solutions.Domain
 {
     public class Account
     {

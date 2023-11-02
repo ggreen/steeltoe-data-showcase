@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Description>steeltoe.data.showcase</Description>
+    <Description>service.api</Description>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <ContainerRepository>account.service</ContainerRepository>
   </PropertyGroup>
@@ -21,7 +21,7 @@
       <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>    
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'steeltoe.data.showcase' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'service.api' " />
   <ItemGroup>
     <ProjectReference Include="../../components/account.domain/account.domain.csproj" />
     <ProjectReference Include="../../components/account.service/account.service.csproj" />

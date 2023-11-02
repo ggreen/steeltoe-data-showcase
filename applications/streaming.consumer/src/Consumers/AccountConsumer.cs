@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using steeltoe.data.Showcase.Domain;
-using steeltoe.data.Showcase.Repository;
+using Showcase.SteelToe.Data.Solutions.Domain;
+using Showcase.SteelToe.Data.Repository;
 using Steeltoe.Stream.Attributes;
 using Steeltoe.Stream.Messaging;
 
-namespace streaming.consumer.Consumer
+namespace Showcase.SteelToe.Data.Solutions.Consumer.Consumers
 {
     [EnableBinding(typeof(ISink))]
     public class AccountConsumer

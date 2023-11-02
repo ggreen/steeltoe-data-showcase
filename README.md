@@ -108,6 +108,9 @@ dotnet new sln
  
  dotnet sln add applications/service.api/steeltoe.data.showcase.csproj
  dotnet sln add applications/streaming.consumer/steeltoe.streaming.consumer.csproj
+ dotnet sln add applications/streaming.consumer/steeltoe.streaming.consumer.csproj
+ dotnet sln add applications/steeltoe.showcase.caching.sink/steeltoe.showcase.caching.sink.csproj
+ 
  account.service.csproj
 ```
 
