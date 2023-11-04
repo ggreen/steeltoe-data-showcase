@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Showcase.SteelToe.Data.Solutions.Domain;
+using StackExchange.Redis;
 using Steeltoe.Showcase.Caching.Sink.Consumers;
 using Steeltoe.Showcase.Caching.Sink.Repository;
 
@@ -28,6 +29,8 @@ namespace Steeltoe.Showcase.Caching.Sink.test.Consumers
         [TestMethod]
         public void Accept()
         {
+
+
             Account input = null;
             subject.Accept(input);
 

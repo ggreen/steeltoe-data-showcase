@@ -4,6 +4,8 @@ using Steeltoe.Extensions.Configuration.Placeholder;
 using Steeltoe.Showcase.Caching.Sink.Consumers;
 using Steeltoe.Stream.Extensions;
 using Steeltoe.Extensions.Logging;
+using Steeltoe.Extensions.Configuration;
+using Steeltoe.Extensions.Configuration.ConfigServer;
 
 namespace Steeltoe.Showcase.Caching.Sink
 {
@@ -18,7 +20,8 @@ namespace Steeltoe.Showcase.Caching.Sink
             Host.CreateDefaultBuilder(args)
                    .UseDefaultServiceProvider(options =>
                     options.ValidateScopes = false)
-                .AddPlaceholderResolver()
+                .AddConfigServer()
+                // .AddPlaceholderResolver()
                 .ConfigureLogging((context, builder) => builder.AddDynamicConsole())
                 .AddStreamServices<AccountConsumer>()
                 .ConfigureWebHostDefaults(webBuilder => 

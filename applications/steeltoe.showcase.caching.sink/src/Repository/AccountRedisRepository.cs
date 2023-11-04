@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Showcase.SteelToe.Data.Solutions.Domain;
@@ -12,6 +13,7 @@ namespace Steeltoe.Showcase.Caching.Sink.Repository
     {
         private readonly IConnectionMultiplexer connection;
         private readonly IDatabase database;
+        private const string KEY_PREFIX = "Accouunt|";
 
         public AccountRedisRepository(IConnectionMultiplexer connection){
             this.connection = connection;
@@ -21,7 +23,7 @@ namespace Steeltoe.Showcase.Caching.Sink.Repository
 
         public void Save(Account account)
         {
-            this.database.StringSet(account.Id.ToString(),JsonSerializer.Serialize(account));            
+            this.database.StringSet($"{KEY_PREFIX}{account.Id}",JsonSerializer.Serialize(account));            
         }
     }
 }

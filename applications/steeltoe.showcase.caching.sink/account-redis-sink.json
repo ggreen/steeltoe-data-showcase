@@ -45,8 +45,8 @@
         "binder": "rabbit",
         "bindings": {
           "input": {
-            "destination": "account.input",
-            "group": "redis-sink",
+            "destination": "account.input-steeltoe",
+            "group": "redis-sink-steeltoe",
             "consumer" : {
               "maxAttempts" : 2
             }
